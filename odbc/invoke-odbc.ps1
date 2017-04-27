@@ -2,6 +2,7 @@ function invoke-odbcread($dsnName,$username,$pass,$query)
     {
         # Assumes user/pass stored in DSN
         # user is probably unnecessary
+        #
         # example
         # invoke-odbcread -dsnName "pgsql-darknet" -username "postgres" -pass "" -query "select * from naming"
 
@@ -30,6 +31,7 @@ function invoke-odbcwrite($dsnName,$username,$pass,$query)
     {
         # Assumes user/pass stored in DSN
         # user is probably unnecessary
+        #
         # example
         # invoke-odbcwrite -dsnName "pgsql-darknet" -username "" -pass "" -query $query
 
