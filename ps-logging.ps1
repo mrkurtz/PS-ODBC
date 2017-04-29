@@ -12,8 +12,6 @@
             5=override          -   used to override the globally-defined log level. startup messages, etc.
 
 
-
-
         use the following global variables:
             1.  $global:executingUser       -   account executing the script
             2.  $global:logPath             -   log file location
