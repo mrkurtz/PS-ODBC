@@ -28,7 +28,9 @@
             *   this will call get-logtime() from within function
             *   this will determine calling function as parent's parent function
             *   the parameter value '2' tells the function that log entry type is 2, info
-
+            append-log -logMessage "log message" -path "C:\path\" -file "to.file" -messageContext "customContext"
+            *   specifies custom log path and file 
+            *   specifies to use "customContext" instead of function name or "-"
 
 #>
 
