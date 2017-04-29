@@ -109,7 +109,7 @@ function append-log()
                 [string]$file=$global:logFile
             )
 
-        $nL="`r"
+        $nL="`r`n"
         # define colors
             if ( $logType -eq 0 )
                 {
