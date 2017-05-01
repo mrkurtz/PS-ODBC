@@ -169,6 +169,7 @@ function write-log()
                     $color="white"
                 }
 
+            $log=join-path $global:logPath -ChildPath $global:logFile
 
         # If this is called from the script root or from a shell, substitute '-' for the $null value from get-function
         if ( $messageContext -like $null )
@@ -184,7 +185,7 @@ function write-log()
             {
                 # write log file first since writing to screen buffer is typically slower
                 #$currentLogEntry | out-file -append "$global:logPath$global:logFile"
-                write-data -message $currentLogEntry -file "$global:logPath$global:logFile"
+                write-data -message $currentLogEntry -file $log
                 write-host -fore $color $currentLogEntry
             }
         else
